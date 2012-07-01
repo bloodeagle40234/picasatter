@@ -13,7 +13,7 @@ And we extends it to google feeds.(picasa API)
 If you use twitter widget, download from monitter.com.
 
 
-[USAGE]:
+USAGE:
 
 set your picasa's username and public albumid as follows.
 
@@ -22,7 +22,8 @@ set your picasa's username and public albumid as follows.
 
 Thanks.
 
-Kota Tsuyuzaki
+
+Copyright (c) 2012 Kota Tsuyuzaki 
 bloodeagle40234@gmail.com
 
 
