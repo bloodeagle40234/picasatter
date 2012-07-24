@@ -18,11 +18,12 @@ body.base{
   background-color:#000;
   //scrolling: no;
 }
-body.main{
+.main{
   font-size: 12px;
   font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
   color: #666;
   background-color:#000;
+  float:left;
   //scrollbar-base-color: #ff0000;
 }
 body.sub{
@@ -122,8 +123,11 @@ div.side
 	padding-left: 35px;
 	padding-right: 35px;
 	width: 210px;
+	height: 480px;
 //	background-color:#060;
 	background:url(../images/nega.png) repeat-y left top;
+	float: left;
+	overflow:hidden;
 }
 
 #photo
@@ -133,7 +137,7 @@ div.side
 	margin-left: 50px;
 //	margin-bottom:1000px;
 //	background-color:#300;
-//	border: 1px solid #999;
+	border: 1px solid #999;
 }
 #photo img
 {
@@ -502,7 +506,7 @@ border: 4px solid #666;
 background: #666; 
 overflow:hidden;
 }
-.picasatter 
+/*.picasatter 
 {
 float: left;
 width: 640px;
@@ -511,7 +515,7 @@ margin: 5px;
 border: 4px solid #666;
 background: #666; 
 overflow:hidden;
-}
+}*/
 
 .render: 
 {
