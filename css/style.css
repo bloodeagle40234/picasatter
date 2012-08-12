@@ -1,44 +1,258 @@
 *{
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
 body{
   font-size: 12px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #666;
-  background-color:#000;
+  background: #373737 url("../images/bg.png") 0 0 repeat;
 }
 .main{
-  font-size: 12px;
-  font-family: Helvetica, Arial, sans-serif;
-  color: #666;
-  background-color:#000;
   float:left;
 }
-h1{
-  font-size:17px;
-  color:#fff;
+.summary{
+  font-size: 28px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
+  color: #CCC;
+  width: 720px;
 }
-h2{
-  font-size:15px;
-  color:#999;
-  padding:0 0 7px 0;
+.side{
+  position: relative;
+  margin-left: 30px;
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 210px;
+  height: 999px;
+  background:url(../images/nega.png) repeat-y left top;
+  float: left;
 }
-div.side{
-	margin-left: 30px;
-	padding-top: 40px;
-	padding-left: 35px;
-	padding-right: 35px;
-	width: 210px;
-	height: 480px;
-//	background-color:#060;
-	background:url(../images/nega.png) repeat-y left top;
-	float: left;
-	overflow:hidden;
+img.photo{
+    width: 720px;
 }
-.waku img{
-  //border:1px solid #000;
-  padding: 20px 5px; //top&bottom,left&right
-  //margin:0 10px 0 0; 
-  //background:#222;
+.thumbnail{
+  padding: 5px 5px; //top&bottom,left&right
+}
+.thumbnail img{
+  width: 200px;
+}
+
+/* ----- table style (from Twitter bootstrap) ----- */
+.table {
+  color: #CCC;
+  max-width: 20px;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  margin-left: 18px;
+}
+.table th{
+  font-weight: bold;
+  padding: 18px;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #666;
+}
+.table td {
+  width: 72px;
+  line-height: 24px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #666;
+}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 1px solid #666;
+}
+.table-bordered {
+  border: 1px solid #666;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-left: 0;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #666;
+}
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 8px;
+          border-top-left-radius: 8px;
+}
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 8px;
+          border-top-right-radius: 8px;
+}
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 8px;
+          border-radius: 0 0 0 8px;
+  -webkit-border-bottom-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+}
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+}
+
+/* ##### render 3 button ##### */
+/*----- load button ----- */
+#rend {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+}
+#rend:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 24px;
+  background-color: #C00;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C00), color-stop(100%, #600));
+  background-image: -webkit-linear-gradient(top, #C00 #600);
+  -webkit-box-shadow: inset 0 0 0 1px #600 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #600, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+#rend:active:before {
+  background-color: #600;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #600), color-stop(100%, #C00));
+  background-image: -webkit-linear-gradient(top, #600, #C00);
+}
+#rend:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../images/load.png") 0 0 no-repeat;
+}
+
+/*----- start button ----- */
+.render div.start {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+}
+.render div.start:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 24px;
+  background-color: #00a2d3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a2d3), color-stop(100%, #0d7796));
+  background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+  -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+.render div.start:active:before {
+  background-color: #0591ba;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0591ba), color-stop(100%, #00a2d3));
+  background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+}
+.render div.start:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../images/start.png") 0 0 no-repeat;
+}
+
+/*----- stop button ----- */
+.render div.stop {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+}
+.render div.stop:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 24px;
+  background-color: #00a2d3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999), color-stop(100%, #333));
+  background-image: -webkit-linear-gradient(top, #999, #333);
+  -webkit-box-shadow: inset 0 0 0 1px #333 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #333, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+.render div.stop:active:before {
+  background-color: #000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #999));
+  background-image: -webkit-linear-gradient(top, #333, #999);
+}
+.render div.stop:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../images/stop.png") 0 0 no-repeat;
 }
