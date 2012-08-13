@@ -257,3 +257,13 @@ img.photo{
   height: 19px;
   background: url("../images/stop.png") 0 0 no-repeat;
 }
+.new {
+    position:relative;
+    font-size: 28px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
+    top: -50px;
+    left: 150px;
+    height: 1px;
+    width: 200px;
+    color: red;
+}
