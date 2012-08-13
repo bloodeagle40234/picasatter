@@ -24,9 +24,10 @@ body{
   padding-left: 35px;
   padding-right: 35px;
   width: 210px;
-  height: 999px;
+  height: 900px;
   background:url(../images/nega.png) repeat-y left top;
   float: left;
+  overflow: hidden;
 }
 img.photo{
     width: 720px;
