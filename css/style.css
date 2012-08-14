@@ -267,3 +267,45 @@ img.photo{
     width: 200px;
     color: red;
 }
+div.toolcircle {
+    height: 150px;
+    width: 250px;  
+    position: absolute;
+    top: 510px;
+    left: 100px;  
+    color: #EEE;  
+    padding: 5px;  
+    border: 1px solid #AAA;
+    opacity: 0.70;
+    background-image: url("../images/circle.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #EEE;  
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
+}  
+  
+div.toolcross {
+    height: 150px;
+    width: 250px;  
+    position: absolute;
+    top: 510px;
+    left: 380px;  
+    color: #EEE;  
+    padding: 5px;  
+    border: 1px solid #AAA;
+    opacity: 0.70;
+    background-image: url("../images/cross.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #EEE;  
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
+} 
+  
