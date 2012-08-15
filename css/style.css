@@ -33,9 +33,10 @@ img.photo{
     width: 720px;
 }
 .thumbnail{
-  padding: 5px 5px; //top&bottom,left&right
+  padding: 2px 2px; //top&bottom,left&right
 }
 .thumbnail img{
+  border: 3px;
   width: 200px;
 }
 
@@ -309,3 +310,12 @@ div.toolcross {
     display: none;
 } 
   
+.thumbnail img.mickey{
+    border: solid blue;
+}
+.thumbnail img.minny{
+    border: solid red;
+}
+.thumbnail img.dumbo{
+    border: solid green;
+}
