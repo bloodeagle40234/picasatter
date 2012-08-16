@@ -33,18 +33,21 @@ body{
   float: left;
   overflow: hidden;
 }
-.photo{
-  width: 696px;
-  text-align: center;
-  margin: 0px auto;
+img.photo{
+    z-index: 0;
+    width: 720px;
+    width: 696px;
+    text-align: center;
+    margin: 0px auto;
 }
 #main_window{ //960×720 or 720×960 -> 375[H]x500[W]
   height: 375px;
 }
 .thumbnail{
-  padding: 5px 5px; //top&bottom,left&right
+  padding: 2px 2px; //top&bottom,left&right
 }
 .thumbnail img{
+  border: 3px;
   width: 200px;
 }
 
@@ -317,4 +320,30 @@ div.toolcross {
             border-radius: 8px;
     display: none;
 } 
+  
+.thumbnail img.mickey{
+    border: solid blue;
+}
+.thumbnail img.minny{
+    border: solid red;
+}
+.thumbnail img.dumbo{
+    border: solid green;
+}
+.main img.subwindow {
+    z-index: 1;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    left: 550px;  
+    color: #EEE;  
+    padding: 5px;  
+    background-position: center center;
+    background-repeat: no-repeat;
+    -moz-background-size: contain; 
+    background-size: contain;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
+}  
   
