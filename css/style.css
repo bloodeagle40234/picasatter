@@ -1,531 +1,359 @@
-﻿
-/* Main CSS Start */
 *{
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-/*
-html
-{
-	background:url(http://www.instagalleryapp.com/images/html-bg.jpg) repeat;
-	width:100%;
-}
-*/
-body.base{
+body{
+  width: 1024px;
+  height: 768px;
   font-size: 12px;
-  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #666;
-  background-color:#000;
-  //scrolling: no;
+  background: #000 url("../images/bg_d.jpg") 0 0 repeat;
 }
 .main{
-  font-size: 12px;
-  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-  color: #666;
-  background-color:#000;
+  width: 744px;
+  height: 768px;
   float:left;
-  //scrollbar-base-color: #ff0000;
 }
-body.sub{
-  font-size: 12px;
-  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
-  color: #666;
-  background-color:#333;
-  //scrollbar-base-color: #ff0000;
+.summary{
+  font-size: 28px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  width: 560px;
+  background-color: rgba(255,230,166, 0.9);
+  border-radius: 8px;
+  border: solid 5px #391515;
+  float: left;
 }
-h1{
-  font-size:17px;
-  color:#fff;
+.side{
+  position: relative;
+  padding-top: 5px;
+  padding-left: 35px;
+  padding-right: 35px;
+  width: 210px;
+  height: 800px;
+  background:url(../images/nega.png) repeat-y left top;
+  float: left;
+  overflow: hidden;
 }
-h2{
-  font-size:15px;
-  color:#00507C;
-  padding:0 0 7px 0;
+.photo{
+  z-index: 0;
+  width: 650px;
+  height: 420px;
+  text-align: center;
+  margin: 36px 18px 36px 18px;
 }
-h3{
-  font-size:14px;
-  color:#26558B;
-  padding:0 0 10px 0;
+#main_window{
+  height: 400px;
+  border: solid 1px #CCC;
+  padding: 10px;
+  background-color: #FFF;
 }
-h4{
-  font-size:13px;
-  color:#26558B;
-  padding:0 0 10px 0;
+.thumbnail{
+  padding: 2px 2px; //top&bottom,left&right
 }
-h5{
-  font-size:12px;
-  color:#26558B;
-  padding:0 0 10px 0;
+.thumbnail img{
+  border: 3px;
+  width: 200px;
 }
-h6{
-  font-size:12px;
-  color:#8a4355;
-  padding:0 0 10px 0;
+
+/* ----- table style (from Twitter bootstrap) ----- */
+.table {
+  font-size: 18px;
+  font-weight: bold;
+  color: #CCC;
+  width: 650px;
+  background-color: #000;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 18px;
+}
+.table th{
+  padding: 18px;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #333;
+  border-top: 1px solid #666;
+}
+.table td {
+  width: 72px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid #666;
+}
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.table tbody + tbody {
+  border-top: 1px solid #666;
+}
+.table-bordered {
+  border: 1px solid #666;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-left: 0;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+}
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #666;
+}
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0;
+}
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 8px;
+          border-top-left-radius: 8px;
+}
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 8px;
+          border-top-right-radius: 8px;
+}
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 8px;
+          border-radius: 0 0 0 8px;
+  -webkit-border-bottom-left-radius: 8px;
+          border-bottom-left-radius: 8px;
+}
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 8px;
+          border-bottom-right-radius: 8px;
+}
+
+/* ##### render 3 button ##### */
+/*----- load button ----- */
+#rend {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  margin-left: 8px;
+  margin-right: 2px;
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  float: left;
+}
+#rend:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 24px;
+  background-color: #C00;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #C00), color-stop(100%, #600));
+  background-image: -webkit-linear-gradient(top, #C00 #600);
+  -webkit-box-shadow: inset 0 0 0 1px #600 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #600, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+#rend:active:before {
+  background-color: #600;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #600), color-stop(100%, #C00));
+  background-image: -webkit-linear-gradient(top, #600, #C00);
+}
+#rend:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../images/load.png") 0 0 no-repeat;
+}
+
+/*----- start button ----- */
+.render div.start {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+}
+.render div.start:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 24px;
+  background-color: #00a2d3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #00a2d3), color-stop(100%, #0d7796));
+  background-image: -webkit-linear-gradient(top, #00a2d3, #0d7796);
+  -webkit-box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #00a2d3, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+.render div.start:active:before {
+  background-color: #0591ba;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0591ba), color-stop(100%, #00a2d3));
+  background-image: -webkit-linear-gradient(top, #0591ba, #00a2d3);
+}
+.render div.start:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../images/start.png") 0 0 no-repeat;
+}
+
+/*----- stop button ----- */
+.render div.stop {
+  position: relative;
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: none;
+  border: 0;
+  border-radius: 24px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+}
+.render div.stop:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 24px;
+  background-color: #00a2d3;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #999), color-stop(100%, #333));
+  background-image: -webkit-linear-gradient(top, #999, #333);
+  -webkit-box-shadow: inset 0 0 0 1px #333 0 0 0 5px rgba(0, 0, 0, 0.16);
+  box-shadow: inset 0 0 0 1px #333, 0 0 0 5px rgba(0, 0, 0, 0.16);
+}
+.render div.stop:active:before {
+  background-color: #000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #333), color-stop(100%, #999));
+  background-image: -webkit-linear-gradient(top, #333, #999);
+}
+.render div.stop:after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 12px;
+  width: 25px;
+  height: 19px;
+  background: url("../images/stop.png") 0 0 no-repeat;
+}
+.new {
+    position:relative;
+    font-size: 28px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
+    top: -50px;
+    left: 150px;
+    height: 1px;
+    width: 200px;
+    color: red;
+}
+div.toolcircle {
+    height: 150px;
+    width: 250px;  
+    position: absolute;
+    top: 510px;
+    left: 100px;  
+    color: #EEE;  
+    padding: 5px;  
+    border: 1px solid #AAA;
+    opacity: 0.70;
+    background-image: url("../images/circle.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #EEE;  
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
+}  
+  
+div.toolcross {
+    height: 150px;
+    width: 250px;  
+    position: absolute;
+    top: 510px;
+    left: 380px;  
+    color: #EEE;  
+    padding: 5px;  
+    border: 1px solid #AAA;
+    opacity: 0.70;
+    background-image: url("../images/cross.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #EEE;  
+    -moz-background-size: 50%;
+    background-size: 50%;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
 } 
-p{
-  padding:0 0 15px 0;
-  color:#40342c;
-  font-size:12px;
-}
-
-ul{
-
-  padding:0 0 12px 30px;
-}
-ul li{
-}
-ol{
-
-  padding:0 0 10px 30px;
-}
-ol li{
-}
-a{
-  color:#3096b8;
-  text-decoration:underline;
-}
-a:hover{
-  text-decoration:none;
-}
-img.centered{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom:23px;
-}
-img.alignright{
-  padding: 0px;
-  margin:5px 0 10px 10px;
-  display: inline;
-}
-img.alignleft{
-  padding: 0px;
-  margin:5px 10px 5px 0;
-  display: inline;
-}	
-img.aligncenter{
-  display: block;
-  padding: 0px;
-  margin:0 10px 0 10px;
-}
-.alignright{
-  float: right;
-}
-.alignleft
-{
-	float: left;
-}
-
-div.side
-{
-	margin-left: 30px;
-	padding-top: 40px;
-	padding-left: 35px;
-	padding-right: 35px;
-	width: 210px;
-	height: 480px;
-//	background-color:#060;
-	background:url(../images/nega.png) repeat-y left top;
-	float: left;
-	overflow:hidden;
-}
-
-#photo
-{
-//	height: 100%;
-	padding-top: 40px;
-	margin-left: 50px;
-//	margin-bottom:1000px;
-//	background-color:#300;
-	border: 1px solid #999;
-}
-#photo img
-{
-	padding-top: 40px;
-}
-#text
-{
-//	padding-top: 40px;
-	margin-bottom: 800px;
-	color: #FFF;
-}
-
-
-.waku img, .waku a img {
-  //border:1px solid #000;
-  padding:5px;
-  margin:0 10px 0 0; 
-  //background:#222;
-}
-.waku a:hover img {
-  //border:1px solid #00F;
-  background:#009;
-}
-.waku a:active img {
-  //border:1px solid #00F;
-  background:#00F;
-}
-/*
-.waku img.wp-smiley {
-border:0px;
-padding:0px;
-margin:0px;
-background:none;
-}
-*/
-/* Main CSS End */
-/*
-#wrapper {
-width:100%;
-background:url(http://www.instagalleryapp.com/images/sec1-bg.jpg) repeat-x left top;
-overflow:hidden;
-}
-#wrapper-outer{
-	width:100%;
-	overflow:hidden;
-	/*background:url(http://www.instagalleryapp.com/images/section1-bg.gif) no-repeat center top;*/
-}
-.thumbnail
-{
-	padding-top: 40px;
-}
-#wrapper-inner
-{
-	width:930px;
-	margin:0 auto;
-	overflow:hidden;
-	background: url(http://www.instagalleryapp.com/images/repat-ribbn.png) repeat-y 13px top;
-}
-#ribbon
-{
-	width:143px;
-	float:left;
-	margin-left:13px;
-	height:1150px;
-/*	background:url(http://www.instagalleryapp.com/images/repat-ribbn.png) repeat-y;*/
-}
-#inner-ribbon
-{
-	width:143px;
-	float:left;
-	min-height:1150px;
-	height:auto !important;
-	height:1150px;
-	background:url(http://www.instagalleryapp.com/images/ribbon-img1.png) no-repeat 3px top;
-}
-#wrapper-right
-{
-	width:701px;
-	float:right;
-	padding:0 0 0 0;
-}
-*/
-/* Header CSS Start */
-header, #header
-{
-width:670px;
-}
-.inner-header{
-	height:110px;
-	padding:59px 0 0 31px;
-	width:670px;
-	float:left;
-}
-.logo
-{
-	width:418px;
-	height:103px;
-	padding:0 0 0 0;
-}
-.logo small
-{
-	font-size:13px;
-	color:#D5CEC0;
-	display:block;
-	font-weight: normal;
-	text-shadow: 0 -1px 1px #000;
-}
-/* Header CSS End */
-
-/* Menu CSS Start */
-
-#menu {
-
-}
-
-/* Menu CSS End */
-
-/* Content CSS Start */
-
-#content {
-	width:695px;
-}
-.inner-content{
-	width:695px;
-	padding:30px 6px 0 0;
-	float:left;
-	position: relative;
-}
-
-	#iphone {
-		position: absolute;
-		left: 300px;
-		top: 200px;
-		width: 197px;
-		height: 460px;
-		background: url(../images/iphone.png) no-repeat 0 0;
-	}
-	#iphone-img {
-		background: black;
-		width: 163px;
-		height: 245px;
-		margin-left: 18px;
-		margin-top: 68px;
-	}
-#up-section
-{
-	width:695px;
-	float:right;
-}
-#col-1
-{
-	width:458px;
-	float:left;
-	padding:49px 0 0 0;
-	background:url(http://www.instagalleryapp.com/images/iphone-img.png) no-repeat;
-	height:576px;
-	position: relative;
-}
-.price {
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 103px;
-	height: 103px;
-	background:url(http://www.instagalleryapp.com/images/price.png) no-repeat 0 0;
-	display: block;
-	text-indent: -9999px;
-	margin-top: -35px;
-	margin-right: -15px;
-}
-#image-area
-{
-	width:311px;
-	height:417px;
-	padding:1px;
-	margin:0 auto;
-	background: #000;
-}
-
-#col-2
-{
-	width:165px;
-	float:right;
-	padding:0 0 0 0;
-}
-#frame-list
-{
-	width:165px;
-	float:right;
-	padding:0 0 17px 0;
-	position:relative;
-}
-#frame-list ul
-{
-	padding:0 0 0 0;
-	list-style:none;
-}
-#frame-list ul li
-{
-	padding:0 0 0 0;
-	margin-bottom:23px;
-	_margin-bottom:19px;
-	width:140px;
-	height:140px;
-	position:relative;
--moz-box-shadow:0 0 15px rgba(0, 0, 0, 0.9);
--webkit-box-shadow: 1px -5px 8px rgba(0, 0, 0, 0.2);
-}
-#frame-list ul li .icon
-{
-	width:44px;
-	height:43px;
-	position:absolute;
-	top:-15px;
-	right:-12px;
-	background:url(http://www.instagalleryapp.com/images/eye-btn.png) no-repeat right top;
-	text-indent:-9999px;
-}
-#frame-list ul li a:hover { background-position: right -47px;}
-#frame-list ul li a:active { background-position: right -94px;}
-.app-store
-{
-	width:143px;
-	height:50px;
-	padding:0 0 0 0;
-	float:left;
-	background:url(http://www.instagalleryapp.com/images/app-store.png) no-repeat;
-	margin-left:0;
-}
-.app-store a
-{
-	width:100px;
-	height:40px;
-	float:left;
-	padding:9px 0 0 41px;
-	text-decoration:none;
-	color:#f2f2f2;
-	font-size:12px;
-	text-indent: -9999px;
-}
-.app-store a em
-{
-	font-style:normal;
-	font-size:16px;
-	font-weight:bold;
-}
-#down-section
-{
-	width:695px;
-	float:right;
-	padding:0 0 0 0;
-	position:relative;
-	top:-60px;
-}
-#info-area
-{
-	width:670px;
-	float:left;
-	padding:0 0 0 25px;
-}
-#info-area ul
-{
-	padding:0 0 0 0;
-	list-style:none;
-	float:left;
-	background:url(http://www.instagalleryapp.com/images/border-btm.gif) repeat-x left bottom;
-}
-#info-area ul li
-{
-	padding:15px 0 10px 0;
-	float:left;
-}
-.nobg{
-	background: none!important;
-}
-#info-area ul li.first
-{
-padding:20px 0 0 0;	
-}
-#info-area ul li.sec
-{
-	background:url(http://www.instagalleryapp.com/images/vertcil-border.gif) repeat-y;
-	padding:20px 0 10px 25px;
-}
-#info-area ul li.first .main-area{
-	width:340px !important;
-}
-#info-area ul li.sec .main-area{
-	width:290px !important;
-}
-.main-area
-{
-	width:315px;
-	float:left;
-	padding:0 0 0 0;
-}
-.main-area img
-{
-	float:left;
-	width:50px;
-}
-.right-cont
-{
-	width:210px;
-	float:left;
-	padding:0 0 0 27px;
-	text-shadow: 0 1px 1px #fff;
-}
-/* Content CSS End */
-
-/* Footer CSS Start */
-
-#footer {
-height:91px;
-padding:0 0 0 0;
-width:695px;
-}
-#left-footer
-{
-	width:180px;
-	float:left;
-	padding:0 0 0 25px;
-}
-
-#right-footer
-{
-	width:427px;
-	float:right;
-	padding:10px 0 0 0;
-	
-}
-#right-footer p
-{
-	color:#61564e !important;
-	font-size:11px !important;
-	
-}
-
-/* Footer CSS End */
-
-.tweet
-{
-display: block;
-background: #333;
-clear: both;
-padding: .6em;
-margin: .3em;
-overflow: hidden;
-}
-.tweet img
-{
-float: left;
-margin-right: 1em;
-border: 2px solid #222;
-background: #444;
-}
-.tweet p.text
-{
-margin: 0;
-padding: 0;
-padding-left: 70px;
-}
-.monitter 
-{
-float: left;
-width: 280px;
-height: 180px;
-margin: 5px;
-border: 4px solid #666;
-background: #666; 
-overflow:hidden;
-}
-/*.picasatter 
-{
-float: left;
-width: 640px;
-height: 480px;
-margin: 5px;
-border: 4px solid #666;
-background: #666; 
-overflow:hidden;
-}*/
-
-.render: 
-{
-float: left;
-width: 280px;
-height: 180px;
-margin: 5px;
-border: 4px solid #666;
-}
+  
+.thumbnail img.mickey{
+    border: solid blue;
+}
+.thumbnail img.minny{
+    border: solid red;
+}
+.thumbnail img.dumbo{
+    border: solid green;
+}
+.main img.subwindow {
+    z-index: 1;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    left: 550px;  
+    color: #EEE;  
+    padding: 5px;  
+    background-position: center center;
+    background-repeat: no-repeat;
+    -moz-background-size: contain; 
+    background-size: contain;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
+}  
+  

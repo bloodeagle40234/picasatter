@@ -1,20 +1,27 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title></title>
-<link rel="stylesheet" href="css/style.css" />
-<script type="text/javascript" src="js/jquery.1.7.2.min.js"></script>
-<script type="text/javascript" src="js/picasatter.min.js"></script>
-</head>
-<body class="base">
-<h1>Picasatter Widget</h1>
-<h2>Demo Widgets:</h2>
-<div class="main">
-<img class="photo" id="main_window" src="https://lh4.googleusercontent.com/-602l5j1hMgo/T_RDvReuE7I/AAAAAAAAAvU/Heo3PpiOK4I/Jellyfish.jpg"  f="slideshow" ></div>
-</div>
-<div class="side">
-<div class="picasatter" id="album1" user="username" album="albumid" authkey="key"></div>
-<div class="summary" id="title">photo_title</div>
-<div class="render" id="rend">stoping</div>
-</div>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery.1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/picasatter.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <table class="table table-bordered" rows="1,2,3,4,5" columns="a,b,c,d,e,f,g,h"></table>
+      <div class="photo">
+        <img id="main_window" src="https://lh4.googleusercontent.com/-602l5j1hMgo/T_RDvReuE7I/AAAAAAAAAvU/Heo3PpiOK4I/Jellyfish.jpg">
+      </div>
+      <div class="render" id="rend"></div>
+      <div class="summary" id="title">photo_title</div>
+      <div class="toolcircle"></div>
+      <div class="toolcross"></div>
+    </div>
+    <div class="side">
+<!--      <div class="picasatter" id="album1" user="username" album="albumid" authkey="key"></div>-->
+      <div class="picasatter" id="album1" user="103236949470535942612" album="5672709374582487457"></div>
+    </div>
+  </body>
 </html>
