@@ -30,6 +30,7 @@ body{
   overflow: hidden;
 }
 img.photo{
+    z-index: 0;
     width: 720px;
 }
 .thumbnail{
@@ -319,3 +320,20 @@ div.toolcross {
 .thumbnail img.dumbo{
     border: solid green;
 }
+.main img.subwindow {
+    z-index: 1;
+    width: 150px;
+    position: absolute;
+    top: 100px;
+    left: 550px;  
+    color: #EEE;  
+    padding: 5px;  
+    background-position: center center;
+    background-repeat: no-repeat;
+    -moz-background-size: contain; 
+    background-size: contain;
+    -webkit-border-radius: 8px;
+            border-radius: 8px;
+    display: none;
+}  
+  
