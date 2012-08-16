@@ -3,34 +3,43 @@
   margin: 0;
 }
 body{
+  width: 1024px;
+  height: 768px;
   font-size: 12px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #666;
   background: #373737 url("../images/bg.png") 0 0 repeat;
 }
 .main{
+  width: 696px;
+  height: 768px;
   float:left;
 }
 .summary{
   font-size: 28px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #CCC;
-  width: 720px;
+  width: 696px;
 }
 .side{
   position: relative;
-  margin-left: 30px;
+  //margin-left: 30px;
   padding-top: 5px;
   padding-left: 35px;
   padding-right: 35px;
   width: 210px;
-  height: 900px;
+  height: 768px;
   background:url(../images/nega.png) repeat-y left top;
   float: left;
   overflow: hidden;
 }
-img.photo{
-    width: 720px;
+.photo{
+  width: 696px;
+  text-align: center;
+  margin: 0px auto;
+}
+#main_window{ //960×720 or 720×960 -> 375[H]x500[W]
+  height: 375px;
 }
 .thumbnail{
   padding: 5px 5px; //top&bottom,left&right
