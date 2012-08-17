@@ -8,12 +8,15 @@
     <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
     <script type="text/javascript" src="js/picasatter.min.js"></script>
   </head>
-  <body class="base">
+  <body>
     <div class="main">
-      <table class="table table-bordered" rows="1,2,3,4,5" columns="a,b,c,d,e,f,g,h" value=" " ></table>
-      <div class="photo">
-        <img id="main_window" src="https://lh4.googleusercontent.com/-602l5j1hMgo/T_RDvReuE7I/AAAAAAAAAvU/Heo3PpiOK4I/Jellyfish.jpg" >
+      <div class="tframe">
+        <table class="table table-bordered" rows="1" columns="a,b,c,d,e,f,g,h" value=" "></table>
       </div>
+      <div class="photo">
+        <img id="main_window" src="https://lh4.googleusercontent.com/-602l5j1hMgo/T_RDvReuE7I/AAAAAAAAAvU/Heo3PpiOK4I/Jellyfish.jpg">
+      </div>
+      <div class="render" id="rend"></div>
       <div class="summary" id="title">photo_title</div>
       <div class="toolcircle"></div>
       <div class="toolcross"></div>
@@ -21,6 +24,5 @@
     <div class="side">
       <div class="picasatter" id="album1" user="username" album="albumid" authkey="key"></div>
     </div>
-    <div class="render" id="rend"></div>
   </body>
 </html>

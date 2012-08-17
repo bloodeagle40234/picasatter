@@ -8,40 +8,48 @@ body{
   font-size: 12px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #666;
-  background: #373737 url("../images/bg.png") 0 0 repeat;
+  background: #000 url("../images/bg_d.jpg") 0 0 repeat;
 }
 .main{
-  width: 696px;
+  width: 710px;
   height: 768px;
   float:left;
 }
 .summary{
-  font-size: 28px;
+  line-height: 60px;
+  font-size: 38px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
-  color: #CCC;
-  width: 696px;
+  color: #000;
+  text-align: center;
+  width: 584px;
+  background-color: rgba(255,230,166, 0.9);
+  border-radius: 8px;
+  border: solid 5px #391515;
+  float: left;
 }
 .side{
   position: relative;
-  //margin-left: 30px;
   padding-top: 5px;
   padding-left: 35px;
   padding-right: 35px;
   width: 210px;
-  height: 768px;
+  height: 800px;
   background:url(../images/nega.png) repeat-y left top;
   float: left;
   overflow: hidden;
 }
-img.photo{
-    z-index: 0;
-    width: 720px;
-    width: 696px;
-    text-align: center;
-    margin: 0px auto;
+.photo{
+  z-index: 0;
+  width: 670px;
+  height: 480px;
+  text-align: center;
+  margin: 20px;
 }
-#main_window{ //960×720 or 720×960 -> 375[H]x500[W]
-  height: 375px;
+#main_window{
+  height: 458px;
+  border: solid 1px #CCC;
+  padding: 10px;
+  background-color: #FFF;
 }
 .thumbnail{
   padding: 2px 2px; //top&bottom,left&right
@@ -52,27 +60,35 @@ img.photo{
 }
 
 /* ----- table style (from Twitter bootstrap) ----- */
+.tframe {
+  height: 123px;
+  width: 100%;
+  padding: 20px 55px;
+  background-color: rgba(0,0,0, 0.8);
+}
 .table {
+  font-size: 15px;
+  font-weight: bold;
   color: #CCC;
-  max-width: 20px;
-  background-color: transparent;
+  width: 600px;
+  background-color: rgba(255,230,166, 0.9);
   border-collapse: collapse;
   border-spacing: 0;
-  margin-top: 18px;
-  margin-bottom: 18px;
-  margin-left: 18px;
+
 }
 .table th{
-  font-weight: bold;
-  padding: 18px;
-  line-height: 10px;
+  padding: 10px;
+  line-height: 0px;
   text-align: center;
   vertical-align: middle;
+  background-color: #300;
   border-top: 1px solid #666;
 }
 .table td {
+  color: #333;
   width: 72px;
-  line-height: 24px;
+  padding: 10px;
+  line-height: 0px;
   text-align: center;
   vertical-align: middle;
   border-top: 1px solid #666;
@@ -141,6 +157,9 @@ img.photo{
   z-index: 2;
   width: 48px;
   height: 48px;
+  margin-top: 10px;
+  margin-left: 6px;
+  margin-right: 4px;
   cursor: pointer;
   text-indent: 120%;
   white-space: nowrap;
@@ -150,6 +169,7 @@ img.photo{
   border-radius: 24px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px rgba(255, 255, 255, 0.1);
+  float: left;
 }
 #rend:before {
   content: '';
@@ -280,11 +300,12 @@ img.photo{
     color: red;
 }
 div.toolcircle {
+    z-index: 2;
     height: 150px;
     width: 250px;  
     position: absolute;
-    top: 510px;
-    left: 100px;  
+    top: 460px;
+    left: 90px;  
     color: #EEE;  
     padding: 5px;  
     border: 1px solid #AAA;
@@ -301,11 +322,12 @@ div.toolcircle {
 }  
   
 div.toolcross {
+    z-index: 3;
     height: 150px;
     width: 250px;  
     position: absolute;
-    top: 510px;
-    left: 380px;  
+    top: 460px;
+    left: 370px;  
     color: #EEE;  
     padding: 5px;  
     border: 1px solid #AAA;
@@ -332,10 +354,13 @@ div.toolcross {
 }
 .main img.subwindow {
     z-index: 1;
-    width: 150px;
+    max-height:150px;
+    max-width: 150px;
     position: absolute;
-    top: 100px;
-    left: 550px;  
+    //top: 530px;
+    //left: 550px;
+    top: 185px;
+    left: 45px;
     color: #EEE;  
     padding: 5px;  
     background-position: center center;
