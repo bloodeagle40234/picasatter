@@ -15,9 +15,12 @@ body{
   height: 768px;
   float:left;
 }
-.summary{
+div.summary{
+  position: relative;
+  top: 20px;
+  left: 10px;
   line-height: 60px;
-  font-size: 38px;
+  font-size: 42px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #000;
   text-align: center;
@@ -29,16 +32,18 @@ body{
 }
 .side{
   position: relative;
-  padding-top: 5px;
+  padding-top: 0px;
   padding-left: 35px;
   padding-right: 35px;
   width: 210px;
-  height: 800px;
+  height: 768px;
   background:url(../images/nega.png) repeat-y left top;
   float: left;
   overflow: hidden;
 }
 .photo{
+  position: relative;
+  top: 30px;
   z-index: 0;
   width: 670px;
   height: 480px;
@@ -61,13 +66,15 @@ body{
 
 /* ----- table style (from Twitter bootstrap) ----- */
 .tframe {
+  position: relative;
+  top: 70px;
   height: 123px;
   width: 100%;
-  padding: 20px 55px;
+  padding: 20px 20px;
   background-color: rgba(0,0,0, 0.8);
 }
 .table {
-  font-size: 15px;
+  font-size: 30px;
   font-weight: bold;
   color: #CCC;
   width: 600px;
@@ -88,7 +95,8 @@ body{
   color: #333;
   width: 72px;
   padding: 10px;
-  line-height: 0px;
+  #line-height: 0px;
+  line-height: 20px;
   text-align: center;
   vertical-align: middle;
   border-top: 1px solid #666;
@@ -155,6 +163,7 @@ body{
 #rend {
   position: relative;
   z-index: 2;
+  top: 20px;
   width: 48px;
   height: 48px;
   margin-top: 10px;
@@ -304,7 +313,7 @@ div.toolcircle {
     height: 150px;
     width: 250px;  
     position: absolute;
-    top: 460px;
+    top: 360px;
     left: 90px;  
     color: #EEE;  
     padding: 5px;  
@@ -326,7 +335,7 @@ div.toolcross {
     height: 150px;
     width: 250px;  
     position: absolute;
-    top: 460px;
+    top: 360px;
     left: 370px;  
     color: #EEE;  
     padding: 5px;  
@@ -344,13 +353,32 @@ div.toolcross {
 } 
   
 .thumbnail img.mickey{
-    border: solid blue;
+    border: solid silver;
 }
 .thumbnail img.minny{
     border: solid red;
 }
 .thumbnail img.dumbo{
+    border: solid #36f;
+}
+.thumbnail img.fantasia{
+    border: solid blue;
+}
+.thumbnail img.marie{
+    border: solid white;
+}
+.thumbnail img.pminny{
+    border: solid #ff1493;
+}
+.thumbnail img.tigger{
+    border: solid #f90;
+}
+.thumbnail img.greenmen{
     border: solid green;
+}
+.icon{
+    height: 80px;
+    width: 80px;
 }
 .main img.subwindow {
     z-index: 1;
