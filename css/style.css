@@ -24,7 +24,22 @@ div.summary{
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #000;
   text-align: center;
-  width: 584px;
+  width: 484px;
+  background-color: rgba(255,230,166, 0.9);
+  border-radius: 8px;
+  border: solid 5px #391515;
+  float: left;
+}
+div.timeleft{
+  position: relative;
+  top: 20px;
+  left: 30px;
+  line-height: 60px;
+  font-size: 20px;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
+  color: #000;
+  text-align: center;
+  width: 100px;
   background-color: rgba(255,230,166, 0.9);
   border-radius: 8px;
   border: solid 5px #391515;
@@ -388,16 +403,14 @@ div.toolcross {
     opacity: 0.8;
     //top: 530px;
     //left: 550px;
-    top: 185px;
-    left: 45px;
+    top: 60px;
+    left: 30px;
     color: #EEE;  
-    padding: 5px;  
+    border: solid 5px #CCC; 
     background-position: center center;
     background-repeat: no-repeat;
     -moz-background-size: contain; 
     background-size: contain;
-    -webkit-border-radius: 8px;
-            border-radius: 8px;
     display: none;
 }  
   
