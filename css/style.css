@@ -16,6 +16,7 @@ body{
   float:left;
 }
 div.summary{
+  z-index: 4;
   position: relative;
   top: 20px;
   left: 10px;
@@ -33,9 +34,9 @@ div.summary{
 div.timeleft{
   position: relative;
   top: 20px;
-  left: 30px;
+  left: 20px;
   line-height: 60px;
-  font-size: 20px;
+  font-size: 30px;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Helvetica, Arial, sans-serif;
   color: #000;
   text-align: center;
