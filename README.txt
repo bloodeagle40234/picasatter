@@ -1,4 +1,4 @@
-Picasatter
+﻿Picasatter
 +++++++++++++++++++++++
 
 README & USAGE
