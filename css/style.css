@@ -369,33 +369,33 @@ div.toolcross {
     display: none;
 } 
   
-.thumbnail img.mickey{
+img.mickey{
     border: solid silver;
 }
-.thumbnail img.minny{
+img.minny{
     border: solid red;
 }
-.thumbnail img.dumbo{
+img.dumbo{
     border: solid #36f;
 }
-.thumbnail img.fantasia{
+img.fantasia{
     border: solid blue;
 }
-.thumbnail img.marie{
+img.marie{
     border: solid white;
 }
-.thumbnail img.pminny{
+img.pminny{
     border: solid #ff1493;
 }
-.thumbnail img.tigger{
+img.tigger{
     border: solid #f90;
 }
-.thumbnail img.greenmen{
+img.greenmen{
     border: solid green;
 }
-.icon{
-    height: 63px;
-    width: 63px;
+.icon img{
+    height: 59px;
+    width: 59px;
 }
 .main img.subwindow {
     z-index: 1;
